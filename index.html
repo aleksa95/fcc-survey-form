@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Survey Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description">
+            Your opinion means a lot to us, tell us what you think!
+        </p>
+
+        <form action="" id="survey-form">
+            <div class="item-wrapper">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="item-wrapper">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="item-wrapper">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" required pattern="^[0-9]*$" min="14" max="120" placeholder="Enter your age">
+            </div>
+
+            <div class="item-wrapper">
+                <label for="dropdown" id="dropdown-label">Why are you leaving us?</label>
+
+                <select id="dropdown">
+                    <option value="0">Desire to learn.</option>
+                    <option value="1">Desire to take on more responsibility.</option>
+                    <option value="2">Desire to take on less responsibility.</option>
+                    <option value="3">Desire to relocate.</option>
+                </select>
+            </div>
+
+            <div class="item-wrapper radio">
+                <label id="radio-label">Would you come back?</label>
+
+                <div class="radio-wrapper">
+                    <label class="radio-item">
+                        <input type="radio" name="radio" value="definitely"> Definitely
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="radio" value="maybe"> Maybe
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="radio" name="radio" value="no"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="item-wrapper radio">
+                <label id="checkbox-label">What parts didn't you like?</label>
+
+                <div class="radio-wrapper">
+                    <label class="radio-item">
+                        <input type="checkbox" name="checkbox" value="definitely"> Experience
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="checkbox" name="checkbox" value="maybe"> Speed
+                    </label>
+
+                    <label class="radio-item">
+                        <input type="checkbox" name="checkbox" value="no"> Content
+                    </label>
+                </div>
+            </div>
+
+            <div class="item-wrapper radio">
+                <label for="textarea" id="textarea-label">Anything you would like to add: (Optional)</label>
+                <textarea id="textarea" placeholder="Enter your comment"></textarea>
+            </div>
+
+            <button type="submit" id="submit">submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

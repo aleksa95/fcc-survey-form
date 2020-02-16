@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: Roboto, SansSerif;
+    background: #79bac1;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.content-wrapper {
+    max-width: 600px;
+    width: 100%;
+    justify-content: center;
+    margin: 50px;
+}
+
+.content-wrapper h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+#description {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#survey-form {
+    padding: 50px;
+    background: #7d79c1;
+}
+
+.item-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.item-wrapper:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.item-wrapper label {
+    font-size: 1.8rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.item-wrapper input, .item-wrapper textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.item-wrapper select {
+    height: 38px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.item-wrapper.radio {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-wrapper.radio .radio-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-wrapper.radio label:first-child {
+    margin-bottom: 20px;
+}
+
+.item-wrapper.radio .radio-wrapper .radio-item {
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.item-wrapper.radio .radio-wrapper .radio-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-wrapper.radio .radio-wrapper .radio-item input {
+    width: auto;
+    margin-right: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+#submit {
+    width: 150px;
+    display: block;
+    border: none;
+    margin: 50px auto 0 auto;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    background: #79c180;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 420ms cubic-bezier(.165,.84,.44,1);
+}
+
+#submit:hover {
+    background: #9cd1a1;
+}
+
+
